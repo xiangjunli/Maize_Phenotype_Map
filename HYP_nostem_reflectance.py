@@ -77,7 +77,7 @@ error = open('HYP_nostem_reflectance_maize_diversity_errorimage.txt','w')
 for j1 in whole:
 	if j1 == 'Genotype_ZL022':continue
 	for i1 in os.listdir('{0}/{1}'.format(mfold,j1)):
-			for d1 in sorted(os.listdir('{0}/{1}/{2}/HYP SV 90/'.format(mfold,j1,i1))):
+			for d1 in sorted(os.listdir('{0}/{1}/{2}/HYP_SV_90/'.format(mfold,j1,i1))):
 				mdict = {}
 				nlist = [i1.replace('Plant_',''),d1]
 				if d1 in first3:continue
